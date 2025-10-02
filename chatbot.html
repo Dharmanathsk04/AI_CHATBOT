@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="chat.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js">
+  <main class="chat-container">
+    <div class="messages-container">
+      <header class="chat-header">
+        <h1>VDSP-CHATBOT</h1>
+        <p>Chat with an AI assistant or generate an image!</p>
+        <button id="theme-toggle">🌙 Toggle Theme</button>
+      </header>
+      <div class="message-list"></div>
+    </div>
+
+    <form class="chat-form">
+      <textarea class="chat-textarea" placeholder="Enter a message..." rows="1"></textarea>
+      <button type="submit" class="send-button">Send</button>
+      <button type="button" id="image-gen-btn"> <a style=" color: black; text-decoration: none; "  href="image.html" onclick="showSection('aiChat')">🖼️ Generate Image </a></button>
+    </form>
+    </div>
+  </main>
+  <script src="chat.js"></script>
+</body>
+</html>
