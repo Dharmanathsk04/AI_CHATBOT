@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: #a855f7;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 25px;
+    cursor: pointer;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+  }
+  
+  .hero.active {
+    display: flex;
+  }
+  
+  /* Section common styles */
+  .section {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+  }
+  
+  .primary {
+    background-color: #a855f7;
+    color: #fff;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .primary:hover {
+    background-color: #9333ea;
+  }
+  
+  .secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #a855f7;
+  }
+  
+  .secondary:hover {
+    background-color: rgba(168, 85, 247, 0.1);
+  }
+  
+  /* Form Box Styles */
+  .form-box {
+    border: 1px solid #a855f7;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .form-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-box form label {
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 1rem;
+  }
+  
+  .form-box form input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  /* Horizontal button arrangement in forms */
+  .form-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Particles Background */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
